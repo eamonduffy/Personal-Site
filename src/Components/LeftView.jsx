@@ -4,6 +4,10 @@ import styled from 'styled-components';
 
 // COMPONENTS
 import ProfileNavBtn from './ProfileNavBtn';
+import LinkedinNavBtn from './LinkedinNavBtn';
+import ProjectsNavBtn from './ProjectsNavBtn';
+import GithubNavBtn from './GithubNavBtn';
+import FacebookNavBtn from './FacebookNavBtn';
 
 const View = styled.div`
   background-color: rgba(124, 124, 124, 0.7);
@@ -16,7 +20,31 @@ export default function LeftView() {
   return (
     <Container>
       <View>
-        <ProfileNavBtn></ProfileNavBtn>
+        <Row>
+          <Col>
+            <ProfileNavBtn />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <ProjectsNavBtn />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <GithubNavBtn />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <LinkedinNavBtn />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <FacebookNavBtn />
+          </Col>
+        </Row>
       </View>
     </Container>
   );

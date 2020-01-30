@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Container } from 'react-bootstrap';
-import { FiUser } from 'react-icons/fi';
+import { FaLaptopCode } from 'react-icons/fa';
 
 const Button = styled.button`
   display: block;
@@ -10,11 +10,11 @@ const Button = styled.button`
   height: 75px;
   width: 75px;
   margin: auto;
-  margin-top: 35px;
+  margin-top: 20px;
   margin-bottom: 20px;
   text-align: center;
   background-color: rgba(155, 155, 155, 0.76);
-  transition: 0.5s;
+  transition: 0.3s;
   box-shadow: 1px 1px 1px 1px rgba(79, 82, 83, 0.76);
 
   :hover {
@@ -37,7 +37,7 @@ export default function ProfileNavBtn() {
       <Button>
         <IconStyle>
           {/* <div style={{ color: 'rgba(170, 170, 170, 0.76)' }}> */}
-          <FiUser size={60} />
+          <FaLaptopCode size={50} />
           {/* </div> */}
         </IconStyle>
       </Button>
