@@ -3,22 +3,20 @@ import styled, { css } from 'styled-components';
 import { Container, Row, Col } from 'react-bootstrap';
 
 // COMPONENTS
-import LeftView from '../Components/LeftView';
-import RightView from '../Components/RightView';
+import Nav from './Nav';
+import TheView from '../Components/TheView';
 
 function App() {
   return (
-    <Container>
+    <div>
       <Row>
-        <Col xs={2}>
-          <LeftView />
-        </Col>
-        <Col xs={10}>
-          <RightView></RightView>
-        </Col>
+        <Nav />
       </Row>
-    </Container>
+      <Row>
+        <TheView />
+      </Row>
+    </div>
+
   );
 }
-
 export default App;
