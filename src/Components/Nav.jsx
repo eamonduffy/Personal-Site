@@ -15,7 +15,7 @@ const View = styled.div`
   width: 100%;
 `;
 
-export default function Nav() {
+export default function Nav(props) {
   return (
     <View>
       <Row>
@@ -24,10 +24,11 @@ export default function Nav() {
         <Col></Col>
 
         <Col>
-          <ProfileNavBtn />
+          {/* Instead of {..props} you can use 'openProfile={props.openProfile}' ::::: Each button has two examples of how to pass up*/}
+          <ProfileNavBtn {...props} />
         </Col>
         <Col>
-          <ProjectsNavBtn />
+          <ProjectsNavBtn openProjects={props.openProjects} />
         </Col>
         <Col>
           <GithubNavBtn />

@@ -10,7 +10,7 @@ const Button = styled.button`
   height: 75px;
   width: 75px;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-bottom: 20px;
   text-align: center;
   background-color: rgba(155, 155, 155);
@@ -18,7 +18,7 @@ const Button = styled.button`
   box-shadow: 0 10px 10px -2px rgba(0, 0, 0, 0.4);
 
   :hover {
-    background-color: rgba(105, 189, 210, 0.76);
+    background-color: #6e5494;
   }
 `;
 
