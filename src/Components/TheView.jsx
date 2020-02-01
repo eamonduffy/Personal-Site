@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import styled from 'styled-components';
 
 // COMPONENTS
+import ProfileView from '../Components/ProfileView';
 
 const View = styled.div`
   background-color: rgba(124, 124, 124, 0.5);
@@ -14,5 +15,9 @@ const View = styled.div`
 `;
 
 export default function TheView() {
-  return <View></View>;
+  return (
+    <View>
+      <ProfileView />
+    </View>
+  );
 }
