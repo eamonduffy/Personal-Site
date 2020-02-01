@@ -18,7 +18,7 @@ const Button = styled.button`
   box-shadow: 0 10px 10px -2px rgba(0,0,0,0.4);
 
   :hover {
-    background-color: rgba(105, 189, 210, 0.76);
+    background-color: #3b5998;
   }
 `;
 
