@@ -10,12 +10,12 @@ const Button = styled.button`
   height: 75px;
   width: 75px;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 20px;
   text-align: center;
   background-color: rgba(155, 155, 155);
   transition: 0.3s;
-  box-shadow: 0 10px 10px -2px rgba(0,0,0,0.4);
+  box-shadow: 0 10px 10px -2px rgba(0, 0, 0, 0.4);
 
   :hover {
     background-color: #0e76a8;
@@ -23,8 +23,8 @@ const Button = styled.button`
 `;
 
 const IconStyle = styled.div`
-color: #4F4F4F;
-transition: 0.5s;
+  color: #4f4f4f;
+  transition: 0.5s;
 
   :hover {
     color: rgba(237, 237, 237, 0.76);
