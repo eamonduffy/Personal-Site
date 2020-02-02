@@ -4,7 +4,18 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 // COMPONENTS
 import Nav from './Nav';
-import TheView from '../Components/TheView';
+import ProfileView from './ProfileView';
+import ProjectsView from './ProjectsView'
+
+const View = styled.div`
+  background-color: rgba(124, 124, 124, 0.5);
+  height: 84vh;
+  width: 100%;
+  margin-left: 100px;
+  margin-right: 100px;
+  border-radius: 15px;
+  z-index:1;
+`;
 
 class Main extends Component {
   state = {
@@ -13,25 +24,17 @@ class Main extends Component {
   }
 
   handleProfile = () => {
-    if (this.state.profileOpen == true) {
-      this.setState({ profileOpen: false })
-      console.log('profile close', this.state.profileOpen, this.state.projectsOpen)
-    } else {
-      this.setState({ profileOpen: true })
-      this.setState({ projectsOpen: false })
-      console.log('profile open', this.state.profileOpen, this.state.projectsOpen)
-    }
+    this.setState({ profileOpen: true })
+    this.setState({ projectsOpen: false })
+    console.log('profile', this.state.profileOpen, this.state.projectsOpen)
+
   }
 
   handleProjects = () => {
-    if (this.state.projectsOpen == true) {
-      this.setState({ projectsOpen: false })
-      console.log('projects open', this.state.projectsOpen, this.state.profileOpen)
-    } else {
-      this.setState({ projectsOpen: true })
-      this.setState({ profileOpen: false })
-      console.log('projects closed', this.state.projectsOpen, this.state.profileOpen)
-    }
+    this.setState({ projectsOpen: true })
+    this.setState({ profileOpen: false })
+    console.log('projects', this.state.profileOpen, this.state.projectsOpen)
+
   }
 
   render() {
@@ -41,7 +44,9 @@ class Main extends Component {
           <Nav openProfile={this.handleProfile} openProjects={this.handleProjects} />
         </Row>
         <Row>
-          <TheView />
+          <View>
+            {this.state.profileOpen ? <ProfileView /> : <ProjectsView />}
+          </View>
         </Row>
       </div >
 

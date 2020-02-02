@@ -16,6 +16,7 @@ const Button = styled.button`
   background-color: rgba(155, 155, 155);
   transition: 0.5s;
   box-shadow: 0 10px 10px -2px rgba(0, 0, 0, 0.4);
+  outline: none !important;
 
   :hover {
     background-color: #6e5494;
