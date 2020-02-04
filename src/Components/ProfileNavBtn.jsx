@@ -18,8 +18,12 @@ const Button = styled.button`
   box-shadow: 0 10px 10px -2px rgba(0, 0, 0, 0.4);
   outline: none !important;
 
+  @media (max-width: 1550px) {
+    margin-top: 20px;
+  }
+
   :hover {
-    background-color: #E85353;
+    background-color: #e85353;
   }
 `;
 
@@ -32,7 +36,7 @@ const IconStyle = styled.div`
   }
 `;
 
-const ProfileNavBtn = (props) => {
+const ProfileNavBtn = props => {
   return (
     <Container>
       <Button onClick={props.openProfile}>
@@ -44,6 +48,6 @@ const ProfileNavBtn = (props) => {
       </Button>
     </Container>
   );
-}
+};
 
 export default ProfileNavBtn;

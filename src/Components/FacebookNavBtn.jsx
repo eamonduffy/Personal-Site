@@ -15,8 +15,12 @@ const Button = styled.button`
   text-align: center;
   background-color: rgba(155, 155, 155);
   transition: 0.5s;
-  box-shadow: 0 10px 10px -2px rgba(0,0,0,0.4);
+  box-shadow: 0 10px 10px -2px rgba(0, 0, 0, 0.4);
   outline: none !important;
+
+  @media (max-width: 1550px) {
+    margin-top: 20px;
+  }
 
   :hover {
     background-color: #3b5998;
@@ -24,7 +28,7 @@ const Button = styled.button`
 `;
 
 const IconStyle = styled.div`
-  color: #4F4F4F;
+  color: #4f4f4f;
   transition: 0.5s;
 
   :hover {

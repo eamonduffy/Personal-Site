@@ -17,7 +17,11 @@ const Button = styled.button`
   transition: 0.3s;
   box-shadow: 0 10px 10px -2px rgba(0, 0, 0, 0.4);
   outline: none !important;
-  
+
+  @media (max-width: 1550px) {
+    margin-top: 20px;
+  }
+
   :hover {
     background-color: #0e76a8;
   }
