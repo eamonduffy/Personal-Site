@@ -9,7 +9,7 @@ import pic4 from '../img/4.jpg';
 
 const imgFit = {
   maxWidth: '95%',
-  maxHeight: '80vh',
+  maxHeight: '585px',
   margin: '15px',
   // paddingLeft: '10px',
   borderRadius: '5px',
