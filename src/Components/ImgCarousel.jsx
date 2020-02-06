@@ -26,7 +26,7 @@ const imgFit = {
 const ImgStyled = styled.img`
   display: block;
   max-width: 95%;
-  height: 95vh;
+  height: 90vh;
   margin: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 5px;
