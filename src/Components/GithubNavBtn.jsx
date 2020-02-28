@@ -37,9 +37,17 @@ const IconStyle = styled.div`
 `;
 
 export default function ProfileNavBtn() {
+  // const handleSearch = () => {
+  //   window.location = 'www.google.com';
+  // };
+
   return (
     <Container>
-      <Button>
+      <Button
+        onClick={event =>
+          (window.location.href = 'https://github.com/eamonduffy')
+        }
+      >
         <IconStyle>
           {/* <div style={{ color: 'rgba(170, 170, 170, 0.76)' }}> */}
           <FiGithub size={50} />

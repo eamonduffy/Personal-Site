@@ -21,7 +21,6 @@ const Name = styled.h1`
 `;
 
 const Title = styled.h3`
-  // margin: 15px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -47,39 +46,14 @@ export default function ProfileView(props) {
       <Row>
         <Title>Software Engineer</Title>
       </Row>
-      {/* About Me */}
       <Row>
         <Col>
           <AboutMe />
         </Col>
         <Col>
-          <AboutMe />
+          <Skills />
         </Col>
       </Row>
-      {/* Skills & Interests */}
-      <Row>
-
-      </Row>
-      {/* <Row>
-        <Col lg={5}>
-          <ProfilePic src={profilePic}></ProfilePic>
-          <ImgCarousel></ImgCarousel>
-        </Col>
-        <Col lg={7}>
-          <Row>
-            <Name>John Eamon Duffy</Name>
-          </Row>
-          <Row>
-            <Title>Software Engineer</Title>
-          </Row>
-          <Row>
-            <AboutMe></AboutMe>
-          </Row>
-          <Row>
-            <Skills></Skills>
-          </Row>
-        </Col>
-      </Row> */}
     </ProView>
   );
 }
