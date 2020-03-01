@@ -45,7 +45,7 @@ const P = styled.p`
   margin-right: 20px;
   color: white;
   text-shadow: 1px 1px 1px #000000;
-  font-size: 15px;
+  font-size: 18px;
 `;
 
 const D = styled.p`

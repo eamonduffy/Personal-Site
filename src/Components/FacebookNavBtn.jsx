@@ -39,17 +39,13 @@ const IconStyle = styled.div`
 export default function ProfileNavBtn() {
   return (
     <Container>
-      <Button
-        onClick={event =>
-          (window.location.href = 'https://www.facebook.com/j.eamon.duffy')
-        }
-      >
-        <IconStyle>
-          {/* <div style={{ color: 'rgba(170, 170, 170, 0.76)' }}> */}
-          <FaFacebookF size={50} />
-          {/* </div> */}
-        </IconStyle>
-      </Button>
+      <a href="https://www.facebook.com/j.eamon.duffy">
+        <Button>
+          <IconStyle>
+            <FaFacebookF size={50} />
+          </IconStyle>
+        </Button>
+      </a>
     </Container>
   );
 }

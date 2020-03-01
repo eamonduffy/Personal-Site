@@ -43,17 +43,13 @@ export default function ProfileNavBtn() {
 
   return (
     <Container>
-      <Button
-        onClick={event =>
-          (window.location.href = 'https://github.com/eamonduffy')
-        }
-      >
-        <IconStyle>
-          {/* <div style={{ color: 'rgba(170, 170, 170, 0.76)' }}> */}
-          <FiGithub size={50} />
-          {/* </div> */}
-        </IconStyle>
-      </Button>
+      <a href="https://github.com/eamonduffy">
+        <Button>
+          <IconStyle>
+            <FiGithub size={50} />
+          </IconStyle>
+        </Button>
+      </a>
     </Container>
   );
 }
