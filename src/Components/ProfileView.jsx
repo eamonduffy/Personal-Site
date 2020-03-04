@@ -9,7 +9,12 @@ import Skills from './Skills';
 
 const ProView = styled.div`
   z-index: 100;
-`;
+  height: 83vh;
+  @media (max-width: 1400px) {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }`;
+
 
 const Name = styled.h1`
   margin: 10px;
